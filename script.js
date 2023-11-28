@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let collageSubscription = document.querySelector('input[name="collage-suscription"]:checked').value;
 
         // Crear el resumen del formulario
-        let summary = "Welcome to our website!\n\n";
+        let summary = "Thanks for subscribing!\n\n";
         summary += "Name: " + name + "\n";
         summary += "Email: " + email + "\n";
         summary += "Favorite movie: " + favoriteMovie + "\n";

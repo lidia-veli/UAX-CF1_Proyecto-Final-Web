@@ -307,7 +307,7 @@ body{
 
 /*FOOTER ---------------------------------*/
 
-.hide-button-box{
+.click-button-container{
     background-color: #831010;
     position: relative;
     width: 100%;
@@ -326,6 +326,18 @@ footer{
 
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont-footer{
+    position: relative;
+    left: 5%;
+    right: 5%;
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
