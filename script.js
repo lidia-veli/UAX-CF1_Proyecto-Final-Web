@@ -19,15 +19,36 @@ ocultarSeccion.addEventListener('click', () => {
 // Espera a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Agrega un listener al formulario
     document.getElementById("suscriptionForm").addEventListener("submit", function (event) {
-        // Prevenir el comportamiento predeterminado del formulario
         event.preventDefault();
 
-        // Muestra un mensaje de éxito
-        alert("You are now officially a member of our community!");
+        // Obtener los valores de los campos del formulario
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let favoriteMovie = document.getElementById("fav-movie").value;
 
-        // Reinicia el formulario
+        // Obtener los géneros de películas seleccionados
+        let favoriteGenres = [];
+        let genreCheckboxes = document.querySelectorAll('input[name="fav-genres"]:checked');
+        genreCheckboxes.forEach(function (checkbox) {
+            favoriteGenres.push(checkbox.value);
+        });
+
+        // Obtener si se suscribe al collage anual
+        let collageSubscription = document.querySelector('input[name="collage-suscription"]:checked').value;
+
+        // Crear el resumen del formulario
+        let summary = "Welcome to our website!\n\n";
+        summary += "Name: " + name + "\n";
+        summary += "Email: " + email + "\n";
+        summary += "Favorite movie: " + favoriteMovie + "\n";
+        summary += "Favorite genres: " + favoriteGenres.join(", ") + "\n";
+        summary += "Collage subscription: " + collageSubscription + "\n";
+
+        // Mostrar la ventana emergente con el resumen del formulario
+        alert(summary);
+
+        // Reiniciar el formulario
         document.getElementById("suscriptionForm").reset();
     });
 });
