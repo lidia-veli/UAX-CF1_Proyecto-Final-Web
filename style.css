@@ -1,10 +1,10 @@
-/* Estilos generales para pantallas grandes */
+/* Estilo para escritorio */
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     }
     
-/* Media query para pantallas más pequeñas, como tablets */
+/* Media query tablets */
 @media (max-width: 768px) {
 body {
     font-size: 14px;
@@ -12,13 +12,14 @@ body {
 }
 }
 
-/* Media query para pantallas aún más pequeñas, como móviles */
+/* Media query móviles */
 @media (max-width: 480px) {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 }
+
 
 /*FIXED HEADER---------------------------------*/
 #fixed-header {
