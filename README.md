@@ -1,7 +1,6 @@
 # UAX-CFT1 Proyecto Final Diseño Web
-  
+Link web: https://lidia-veli.github.io/UAX-CF1_Proyecto-Final-Web/  
 Link repositorio: https://github.com/lidia-veli/UAX-CF1_Proyecto-Final-Web  
-
 
 ## Descripción
 DOM manipulation project. Mi página incluye:
